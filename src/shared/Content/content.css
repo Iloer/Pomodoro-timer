@@ -1,0 +1,12 @@
+.contentMain {
+  display: flex;
+  padding-right: 80px;
+  padding-left: 80px;
+  height: calc(100vh - 70px);
+}
+
+.block {
+  width: calc((100vw - 160px) / 2);
+  margin-top: 5%;
+  overflow-x: auto;
+}

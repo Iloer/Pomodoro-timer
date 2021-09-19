@@ -1,0 +1,18 @@
+.statistic {
+  display: flex;
+}
+
+.ico {
+  fill: var(--red);
+}
+
+.text {
+  color: var(--red);
+}
+
+.statistic:hover .ico{
+  fill: var(--red-hover);
+}
+.statistic:hover .text{
+  color: var(--red-hover);
+}

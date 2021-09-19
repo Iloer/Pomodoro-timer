@@ -1,0 +1,26 @@
+.tasks {
+display: flex;
+flex-direction: column;
+}
+
+.addBtn {
+  width: 173px;
+  height: 55px;
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.addBtn:hover {
+  background-color: var(--green-hover);
+}
+
+.taskInput {
+  height: 55px;
+  width: 70%;
+  background-color: var(--grayF4);
+  color: var(--text);
+  border: 0;
+  font-size: 16px;
+  padding-left: 15px;
+  margin-bottom: 25px;
+}

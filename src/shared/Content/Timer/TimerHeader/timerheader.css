@@ -1,0 +1,14 @@
+.timerHeader {
+  display: flex;
+  background-color: var(--grayC4);
+  padding: 19px 40px;
+}
+
+.timerHeader span {
+  color: var(--white);
+  font-size: 16px;
+}
+
+.timerHeader span:nth-child(2) {
+  margin-left: auto;
+}
