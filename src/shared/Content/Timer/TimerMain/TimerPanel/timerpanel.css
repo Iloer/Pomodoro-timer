@@ -1,0 +1,39 @@
+.timerPanel {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  column-gap: 25px;
+}
+
+.time {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 150px;
+  line-height: 179px;
+}
+
+.taskLabel {
+  color: var(--gray99);
+  font-size: 16px;
+}
+
+.task {
+  color: var(--text);  
+  font-size: 16px;
+}
+
+.plus {
+  padding-top: 20px;
+}
+.plusIcon {
+  fill: var(--grayC4);
+}
+.plusIcon:hover {
+  fill: var(--green-hover);
+}

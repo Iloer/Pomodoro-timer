@@ -1,0 +1,30 @@
+.btnPanel {
+  display: flex;
+  column-gap: 25px;  
+  height: 55px;
+  justify-content: center;
+}
+
+.btnPanel button {
+  width: 145px;
+}
+
+.btnStart {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.btnStart:hover {
+  background-color: var(--green-hover);
+}
+
+.btnStop {
+  border: 2px solid var(--grayC4);
+  color: var(--grayC4);
+}
+
+.btnStop:hover {
+  border: 0;
+  background-color: var(--red);
+  color: var(--white);
+}

@@ -1,4 +1,11 @@
 .timerMain {
   background-color: var(--grayF4);
   height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btnPanel {
+  margin-top: 32px;
 }
