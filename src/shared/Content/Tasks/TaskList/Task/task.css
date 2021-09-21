@@ -1,0 +1,32 @@
+.task {
+  display: flex;
+  height: 55px;
+  align-items: center;
+  border-bottom: 1px solid var(--grayE4);;
+}
+
+.tomatoCount {
+  border: 1px solid var(--grayC4);
+  box-sizing: border-box;  
+  display: inline-block;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  margin-right: 10px;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 17px;
+}
+
+.menuBtn {
+  margin-left: auto;
+}

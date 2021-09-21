@@ -5,7 +5,7 @@ flex-direction: column;
 
 .addBtn {
   width: 173px;
-  height: 55px;
+  min-height: 55px;
   background-color: var(--green);
   color: var(--white);
 }
@@ -15,7 +15,7 @@ flex-direction: column;
 }
 
 .taskInput {
-  height: 55px;
+  min-height: 55px;
   width: 70%;
   background-color: var(--grayF4);
   color: var(--text);

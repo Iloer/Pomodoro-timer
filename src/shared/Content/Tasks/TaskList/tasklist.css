@@ -1,0 +1,12 @@
+.taskList {
+  padding: 0;
+  width: 70%;
+}
+
+.taskList li:nth-child(1) {
+  border-top: 1px solid var(--grayE4);
+}
+
+.task {
+
+}

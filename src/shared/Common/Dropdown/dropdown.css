@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+}
+
+.list {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgb(0 0 0 / 15%);
+  padding-top: 7px;
+  border-radius: 3px;
+}
