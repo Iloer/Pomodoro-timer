@@ -8,10 +8,18 @@
 .timer {
   display: flex;
   justify-content: center;
-  column-gap: 25px;
 }
 
 .time {
+  width: 150px;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 150px;
+  line-height: 179px;
+}
+
+.time2 {
+  width: 70px;
   font-style: normal;
   font-weight: 200;
   font-size: 150px;
@@ -29,7 +37,8 @@
 }
 
 .plus {
-  padding-top: 20px;
+  position: absolute;
+  left: 85%;
 }
 .plusIcon {
   fill: var(--grayC4);
