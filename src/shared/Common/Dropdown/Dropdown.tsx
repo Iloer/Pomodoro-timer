@@ -7,6 +7,7 @@ interface IDropdownProps {
   button: React.ReactNode;
   children: React.ReactNode; 
   className?: string;
+  dropDownListClassname?: string;
   isOpen?: boolean;
   onOpen?: () => void;
   onClose?: () => void;
@@ -19,7 +20,7 @@ interface ICoords {
 
 const NOOP = () => {};
 
-export function Dropdown({ className='', children, button, isOpen=false, onOpen=NOOP, onClose=NOOP }: IDropdownProps) {
+export function Dropdown({ className='', dropDownListClassname='', children, button, isOpen=false, onOpen=NOOP, onClose=NOOP }: IDropdownProps) {
 
   const [isMounted, setIsMounted] = React.useState(false);
   const [coords, setCoords] = useState<ICoords>({left: 0, top: 0});
@@ -54,7 +55,7 @@ export function Dropdown({ className='', children, button, isOpen=false, onOpen=
       if (!(e.target instanceof Element)) return
       const rect = e.target.getBoundingClientRect();
       setCoords({
-        left: rect.x - 68,
+        left: rect.x - 50,
         top: rect.y + window.scrollY + 30
       });
     }
@@ -65,7 +66,7 @@ export function Dropdown({ className='', children, button, isOpen=false, onOpen=
       { button }
       { isDropdownOpen &&          
           ReactDOM.createPortal(
-          <div className= {styles.list} style={{left: coords?.left, top: coords?.top}}> 
+          <div className={`${styles.list} ${dropDownListClassname}`} style={{left: coords?.left, top: coords?.top}}> 
             { children }
           </div>, node)          
       }

@@ -35,6 +35,7 @@ export function Tasks({className = ''}: ITasksProps) {
         placeholder="Название задачи"/>
       <button className={styles.addBtn} onClick={addHandlerClik}>Добавить</button>
       <TaskList tasks={tasks}/>
+      {tasks.length > 0 && <span className={styles.timeSumm}>25 мин</span>}
     </div>
   );
 }
