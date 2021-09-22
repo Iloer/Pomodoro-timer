@@ -8,6 +8,7 @@ flex-direction: column;
   min-height: 55px;
   background-color: var(--green);
   color: var(--white);
+  margin-bottom: 25px;
 }
 
 .addBtn:hover {

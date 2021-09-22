@@ -1,6 +1,8 @@
 .taskList {
   padding: 0;
+  margin-top: 0px;
   width: 70%;
+  overflow-y: auto;
 }
 
 .taskList li:nth-child(1) {
