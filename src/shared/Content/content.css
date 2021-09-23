@@ -8,4 +8,12 @@
 .block {
   width: calc((100vw - 160px) / 2);
   margin-top: 2%;
+  flex: 1;
+}
+
+.blockTime {
+  display: block;
+  width: 45rem;
+  height: 45rem;
+  margin-top: 2%;
 }

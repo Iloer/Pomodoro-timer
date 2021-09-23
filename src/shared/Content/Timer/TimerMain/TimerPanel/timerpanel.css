@@ -3,6 +3,7 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  position: relative;
 }
 
 .timer {
@@ -38,7 +39,7 @@
 
 .plus {
   position: absolute;
-  left: 85%;
+  left: 80%;
 }
 .plusIcon {
   fill: var(--grayC4);

@@ -7,7 +7,7 @@ export function Content() {
   return (
     <main className={styles.contentMain}>
       <Tasks className={styles.block} /> 
-      <Timer className={styles.block} /> 
+      <Timer className={styles.blockTime} /> 
     </main>
   );
 }
