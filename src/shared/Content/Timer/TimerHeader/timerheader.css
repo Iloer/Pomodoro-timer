@@ -1,7 +1,19 @@
 .timerHeader {
   display: flex;
-  background-color: var(--grayC4);
+  
   padding: 19px 40px;
+}
+
+.bacgroundNew {
+  background-color: var(--grayC4);
+}
+
+.bacgroundTask {
+  background-color: var(--red);
+}
+
+.bacgroundBreak {
+  background-color: var(--green);
 }
 
 .timerHeader span {

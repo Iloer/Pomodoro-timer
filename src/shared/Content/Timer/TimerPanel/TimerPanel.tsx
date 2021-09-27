@@ -1,9 +1,13 @@
 import React from 'react';
-import { PlusIcon } from '../../../../Common/Icons';
+import { PlusIcon } from '../../../Common/Icons';
+import { state, status } from '../Timer';
 import styles from './timerpanel.css';
 
 interface ITimerPanelProps{
   className?: string;
+  minutes: number;
+  status: status;
+  state: state;
 }
 
 const padTime = (time: number) => {
@@ -15,13 +19,17 @@ const getTime = (time: number, type: 'min'|'sec') => {
   if (type === 'sec') return  padTime(time % 60);
 };
 
-export function TimerPanel({className=''}: ITimerPanelProps) {
-  const [counter, setCounter] = React.useState(1500);
+export function TimerPanel({className='', minutes, status, state}: ITimerPanelProps) {
+  const [counter, setCounter] = React.useState<number>(minutes);
 
   React.useEffect(() => {
     let timer: any;
-    if (counter > 0) {
+    if (counter > 0 && status === 'active') {
       timer = setTimeout(() => setCounter(c => c - 1), 1000);
+    }
+
+    if (status === 'new') {
+      setCounter(minutes);
     }
 
     return () => {
@@ -29,7 +37,7 @@ export function TimerPanel({className=''}: ITimerPanelProps) {
         clearTimeout(timer);
       }
     };
-  }, [counter]);
+  }, [counter, status]);
 
   return (
     <div className={`${className} ${styles.timerPanel}`}>
