@@ -1,0 +1,1 @@
+export type status = 'new' | 'active' | 'pause' | 'skip' | 'complete';

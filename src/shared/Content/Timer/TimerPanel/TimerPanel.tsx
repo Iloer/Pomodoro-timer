@@ -1,6 +1,7 @@
 import React from 'react';
 import { PlusIcon } from '../../../Common/Icons';
-import { state, status } from '../Timer';
+import { state } from '../Timer';
+import { status } from '../../../Shema';
 import styles from './timerpanel.css';
 
 interface ITimerPanelProps{

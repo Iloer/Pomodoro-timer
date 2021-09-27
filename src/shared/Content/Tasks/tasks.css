@@ -11,6 +11,10 @@ flex-direction: column;
   margin-bottom: 25px;
 }
 
+.addBtn:disabled {
+  cursor: not-allowed;
+}
+
 .addBtn:hover {
   background-color: var(--green-hover);
 }

@@ -1,5 +1,6 @@
 import React from 'react';
-import { state, status } from '../../Timer';
+import { state } from '../../Timer';
+import { status } from '../../../Shema';
 import styles from './btnPanel.css';
 
 interface IBtnPanelProps{

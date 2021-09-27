@@ -3,12 +3,12 @@ import styles from './timer.css';
 import { TimerHeader } from './TimerHeader';
 import { BtnPanel } from './BtnPanel/BtnPanel';
 import { TimerPanel } from './TimerPanel';
+import { status } from '../../Shema';
 
 interface ITimerProps{
   className?: string;
 }
 
-export type status = 'new' | 'active' | 'pause';
 export type state = 'task' | 'break';
 
 export function Timer({className = ''}: ITimerProps) {

@@ -14,7 +14,7 @@ export function Task({className='', task}: ITaskProps) {
       <li className={`${styles.task} ${className}`}>
         <span className={styles.tomatoCount}>{task.tomatoCount}</span>      
         <span className={styles.title}>{task.title}</span> 
-        <Menu btnСlassName={styles.menuBtn} />
+        <Menu btnСlassName={styles.menuBtn} taskId={task.id} />
       </li>
     </>
   );

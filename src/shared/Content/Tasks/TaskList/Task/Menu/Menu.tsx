@@ -1,27 +1,30 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import { Dropdown } from '../../../../../Common/Dropdown';
 import { DeleteIcon, EditIcon, MinusIcon, PlusIcon2, CircleIcon } from '../../../../../Common/Icons';
+import { taskAddTomato, taskDelete, taskDeleteTomato, taskEdit } from '../../../../../Store/tasks/actions';
 import styles from './menu.css';
 
 interface IMenuProps {
   btnСlassName?: string;
+  taskId: string;
 }
 
-function btnPlusClick() {
-  console.log('Plus')
-}
-function btnMinusClick() {
-  console.log('Minus')
-}
-function btnEditClick() {
-  console.log('Edit')
-}
-function btnDeleteClick() {
-  console.log('Delete')
-}
+export function Menu({btnСlassName='', taskId}: IMenuProps) {
+  const dispatch = useDispatch();
 
-export function Menu({btnСlassName=''}: IMenuProps) {
-
+  function btnPlusClick() {
+    dispatch(taskAddTomato(taskId))
+  }
+  function btnMinusClick() {
+    dispatch(taskDeleteTomato(taskId))
+  }
+  function btnEditClick() {
+    dispatch(taskEdit(taskId, 'new name'))
+  }
+  function btnDeleteClick() {
+    dispatch(taskDelete(taskId))
+  }
   return (
     <Dropdown 
       className={btnСlassName}
